@@ -1,0 +1,440 @@
+{\rtf1\ansi\ansicpg949\cocoartf2822
+\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fswiss\fcharset0 Helvetica;}
+{\colortbl;\red255\green255\blue255;}
+{\*\expandedcolortbl;;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww11520\viewh8400\viewkind0
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 <!DOCTYPE html>\
+<html lang="ko">\
+<head>\
+    <meta charset="UTF-8">\
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">\
+    <title>\uc0\u55356 \u57144  \u50771 \u52852 \u45208 \u51060 -\u47112 \u48516 \u49452  \u44032 \u51313 \u50668 \u54665  \u44032 \u51060 \u46300  \u55356 \u57144 </title>\
+    <script src="https://cdn.tailwindcss.com"></script>\
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300;400;500;700&display=swap" rel="stylesheet">\
+    <style>\
+        body \{\
+            font-family: 'Noto Sans KR', sans-serif;\
+            background-color: #FFF9F9; /* Very light pink background */\
+        \}\
+        .hero-bg \{\
+            /* Day 1 - Wakkanai Port Night View Placeholder */\
+            background-image: url('https://gate-to-hokkaido.jp/assets/img/place_to_go/wakkanai/mv.jpg');\
+            background-size: cover;\
+            background-position: center;\
+        \}\
+        .content-box \{\
+            background-color: white;\
+            border-radius: 12px;\
+            padding: 20px;\
+            margin-bottom: 20px;\
+            box-shadow: 0 4px 12px rgba(0,0,0,0.08);\
+        \}\
+        .story-box \{\
+            background-color: #FFF0F5; /* Light pink for story sections */\
+            border-left: 4px solid #FF69B4; /* Hot pink border */\
+            padding: 12px;\
+            margin-top: 10px;\
+            border-radius: 8px;\
+        \}\
+        .tip-box \{\
+            background-color: #E6F7FF; /* Light blue for tip sections */\
+            border-left: 4px solid #1890FF; /* Blue border */\
+            padding: 12px;\
+            margin-top: 10px;\
+            border-radius: 8px;\
+        \}\
+        .section-title \{\
+            font-size: 1.8rem;\
+            font-weight: 700;\
+            color: #D81B60; /* Deep pink */\
+            margin-bottom: 15px;\
+            padding-bottom: 5px;\
+            border-bottom: 2px solid #F48FB1; /* Lighter pink border */\
+        \}\
+        .day-title \{\
+            font-size: 1.5rem;\
+            font-weight: 600;\
+            color: #333;\
+            cursor: pointer;\
+            padding: 12px;\
+            background-color: #FFE4E1; /* Misty Rose */\
+            border-radius: 8px;\
+            display: flex;\
+            justify-content: space-between;\
+            align-items: center;\
+        \}\
+        .day-content \{\
+            display: none;\
+            padding-top: 15px;\
+            border-left: 2px solid #FFC0CB;\
+            padding-left: 15px;\
+            margin-left: 10px;\
+        \}\
+        .recommendation-title \{\
+            font-weight: 500;\
+            color: #C71585; /* MediumVioletRed */\
+            margin-top: 10px;\
+        \}\
+        .checklist-item \{\
+            display: flex;\
+            align-items: center;\
+            margin-bottom: 8px;\
+        \}\
+        .checklist-item svg \{\
+            margin-right: 8px;\
+            color: #FF69B4;\
+        \}\
+        /* Accordion arrow */\
+        .arrow \{\
+            transition: transform 0.3s ease;\
+        \}\
+        .arrow-down \{\
+            transform: rotate(90deg);\
+        \}\
+        /* Back to top button */\
+        #backToTopBtn \{\
+            position: fixed;\
+            bottom: 20px;\
+            right: 20px;\
+            background-color: #FF69B4;\
+            color: white;\
+            border: none;\
+            border-radius: 50%;\
+            width: 50px;\
+            height: 50px;\
+            font-size: 24px;\
+            display: none; /* Hidden by default */\
+            align-items: center;\
+            justify-content: center;\
+            cursor: pointer;\
+            box-shadow: 0 2px 10px rgba(0,0,0,0.2);\
+            z-index: 1000;\
+        \}\
+        .trip-image \{\
+            width: 100%;\
+            max-width: 600px; /* Limit image width for better layout */\
+            height: auto;\
+            border-radius: 8px;\
+            margin-top: 10px;\
+            margin-bottom: 10px;\
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);\
+        \}\
+    </style>\
+</head>\
+<body class="text-gray-800">\
+\
+    <header class="hero-bg text-white p-6 sm:p-10 rounded-b-xl shadow-lg">\
+        <div class="bg-black bg-opacity-40 p-4 sm:p-6 rounded-lg">\
+            <h1 class="text-3xl sm:text-4xl font-bold text-center">\uc0\u55356 \u57144  \u50771 \u52852 \u45208 \u51060 -\u47112 \u48516 \u49452  \u44032 \u51313 \u50668 \u54665  \u55356 \u57144 </h1>\
+            <p class="mt-3 text-center text-md sm:text-lg">\uc0\u48512 \u47784 \u45784 \u44284  \u54632 \u44760  \u54616 \u45716  3\u48149  4\u51068  \u49828 \u53664 \u47532 \u53588 \u47553  \u44032 \u51060 \u46300 </p>\
+        </div>\
+    </header>\
+\
+    <main class="p-4 sm:p-6 max-w-3xl mx-auto">\
+        <div class="content-box text-center">\
+            <p class="text-lg">\uc0\u50500 \u47492 \u45796 \u50868  \u51088 \u50672  \u49549 \u50640 \u49436  \u55184 \u47553 \u54616 \u44256 , \u47579 \u51080 \u45716  \u44144  \u47673 \u44256 , \u49324 \u51652 \u46020  \u51092 \u46889  \u45224 \u44592 \u45716  \u44148  \u44592 \u48376 ! \u50668 \u44592 \u50640  \u44033  \u51109 \u49548 \u50640  \u49704 \u44200 \u51652  \u55141 \u48120 \u47196 \u50868  \u50669 \u49324 \u50752  \u51060 \u50556 \u44592 \u47484  \u45908 \u54644  \u50668 \u54665 \u51012  \u45908 \u50865  \u54413 \u49457 \u54616 \u44172  \u47564 \u46308 \u50612  \u46300 \u47540 \u44172 \u50836 . \u47116 \u53944 \u52852 \u50752  \u54632 \u44760  \u54200 \u50504 \u54616 \u44256  \u51600 \u44144 \u50868  \u50668 \u54665  \u46104 \u49464 \u50836 ! \u55357 \u56842 </p>\
+        </div>\
+\
+        <section id="checklist" class="content-box">\
+            <h2 class="section-title">\uc0\u9992 \u65039  \u50668 \u54665  \u51456 \u48708  \u52404 \u53356 \u47532 \u49828 \u53944  (\u49828 \u53664 \u47532 \u53588 \u47553  \u50640 \u46356 \u49496 !)</h2>\
+            <ul class="space-y-3 mt-4">\
+                <li class="checklist-item">\
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>\
+                    <span><strong>\uc0\u54168 \u47532 /\u49689 \u49548 /\u47116 \u53944 \u52852  \u50696 \u50557 :</strong> 8\u50900 \u51008  \u44537 \u49457 \u49688 \u44592 ! \u53945 \u55176  \u47112 \u48516 \u49452  \u49689 \u49548 \u50752  \u49452  \u45236  \u47116 \u53944 \u52852 \u45716  \u48120 \u47532 \u48120 \u47532  \u50696 \u50557 \u54644 \u50556  \u54644 \u50836 . \u50771 \u52852 \u45208 \u51060 -\u47112 \u48516 \u49452  \u54168 \u47532 \u46020  \u50773 \u48373  \u50696 \u47588  \u54596 \u49688 ! (<a href="https://heartlandferry.jp/korean/" target="_blank" class="text-blue-500 hover:underline">\u54616 \u53944 \u47004 \u46300  \u54168 \u47532 </a>)</span>\
+                </li>\
+                <div class="tip-box">\
+                    <p><strong>\uc0\u54017 :</strong> \u51060  \u54168 \u47532 \u45716  \u50771 \u52852 \u45208 \u51060 \u50752  \u48513 \u51901  \u49452 \u46308 \u51012  \u51079 \u45716  \u51473 \u50836 \u54620  \u44368 \u53685  \u49688 \u45800 \u51060 \u51088 , \u44284 \u44144 \u48512 \u53552  \u51060  \u51648 \u50669 \u51032  \u47932 \u47448 \u50752  \u49324 \u46988  \u51060 \u46041 \u51012  \u52293 \u51076 \u51276 \u45912  '\u48513 \u48169  \u54637 \u47196 '\u51032  \u54788 \u45824 \u54032 \u51060 \u46972 \u44256  \u54624  \u49688  \u51080 \u50612 \u50836 . \u48176  \u50948 \u50640 \u49436  \u47581 \u47581 \u45824 \u54644 \u47484  \u48372 \u47728  \u48513 \u51901 \u51004 \u47196  \u54693 \u54616 \u45716  \u44592 \u48516 \u51012  \u47564 \u45181 \u54644 \u48372 \u49464 \u50836 !</p>\
+                </div>\
+\
+                <li class="checklist-item">\
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>\
+                    <span><strong>\uc0\u45216 \u50472  \u45824 \u48708 :</strong> 8\u50900  \u50771 \u52852 \u45208 \u51060 \u45716  \u54217 \u44512  20\u46020  \u45236 \u50808 \u47196  \u49884 \u50896 \u54616 \u51648 \u47564  \u48148 \u46988 \u51060  \u44053 \u54624  \u49688  \u51080 \u50612 \u50836 . \u50567 \u51008  \u44169 \u50743 (\u48148 \u46988 \u47561 \u51060  \u54596 \u49688 !)\u44284  \u54200 \u54620  \u49888 \u48156  \u51456 \u48708 ! \u47112 \u48516 \u49452 \u51008  \u45216 \u50472  \u48320 \u54868 \u44032  \u49900 \u54616 \u45768  \u50668 \u47084  \u44217  \u44788 \u51077 \u51012  \u49688  \u51080 \u45716  \u50743 \u51060  \u51339 \u50500 \u50836 .</span>\
+                </li>\
+                <div class="tip-box">\
+                    <p><strong>\uc0\u54017 :</strong> \u48513 \u51901 \u51060 \u46972  \u45216 \u50472  \u48320 \u54868 \u44032  \u49900 \u54620  \u44163 \u51008  \u51060  \u51648 \u50669 \u51060  \u45824 \u47449 \u49457  \u44592 \u54980 \u50752  \u54644 \u50577 \u49457  \u44592 \u54980 \u51032  \u50689 \u54693 \u51012  \u46041 \u49884 \u50640  \u48155 \u44592  \u46412 \u47928 \u51060 \u50640 \u50836 . \u50696 \u52769  \u48520 \u44032 \u45733 \u54620  \u45216 \u50472  \u45909 \u48516 \u50640  \u45908 \u50865  \u46300 \u46972 \u47560 \u54001 \u54620  \u54413 \u44221 \u51012  \u47564 \u45216  \u49688 \u46020  \u51080 \u45813 \u45768 \u45796 !</p>\
+                </div>\
+\
+                <li class="checklist-item">\
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>\
+                    <span><strong>\uc0\u51088 \u50808 \u49440  \u52264 \u45800 :</strong> \u48513 \u51901 \u51060 \u46972 \u46020  \u54663 \u49332 \u51008  \u46384 \u44032 \u50892 \u50836 ! \u49440 \u53356 \u47548 , \u47784 \u51088 , \u49440 \u44544 \u46972 \u49828  \u54596 \u49688 !</span>\
+                </li>\
+                <li class="checklist-item">\
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>\
+                    <span><strong>\uc0\u48708 \u49345 \u50557 :</strong> \u48512 \u47784 \u45784 \u44284  \u54632 \u44760 \u54616 \u45716  \u50668 \u54665 \u51060 \u45768 , \u54217 \u49548  \u48373 \u50857 \u54616 \u49884 \u45716  \u50557 \u51060 \u45208  \u44036 \u45800 \u54620  \u48708 \u49345 \u50557 (\u49548 \u54868 \u51228 , \u51652 \u53685 \u51228 , \u47680 \u48120 \u50557  \u46321 )\u51012  \u52313 \u44200 \u51452 \u49464 \u50836 .</span>\
+                </li>\
+                <li class="checklist-item">\
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>\
+                    <span><strong>\uc0\u52852 \u47700 \u46972  \u51109 \u48708 :</strong> \u47691 \u51652  \u49324 \u51652  \u49892 \u47141 \u51012  \u48976 \u45244  \u49884 \u44036 ! \u44305 \u44033  \u47116 \u51592 , \u47581 \u50896  \u47116 \u51592 , \u48169 \u49688 /\u48169 \u51652  \u50857 \u54408 \u46020  \u44256 \u47140 \u54644 \u48372 \u49464 \u50836 .</span>\
+                </li>\
+                 <div class="tip-box">\
+                    <p><strong>\uc0\u54017 :</strong> \u47112 \u48516 \u49452 \u51008  \u45796 \u50577 \u54620  \u50556 \u49373 \u54868 \u50752  \u51312 \u47448 \u51032  \u49436 \u49885 \u51648 \u51060 \u44592 \u46020  \u54644 \u50836 . \u49352 \u47484  \u51339 \u50500 \u54616 \u49888 \u45796 \u47732  \u47581 \u50896  \u47116 \u51592 \u44032  \u50976 \u50857 \u54624  \u49688  \u51080 \u44256 , \u46021 \u53945 \u54620  \u51648 \u54805 \u44284  \u49885 \u47932 \u51012  \u45812 \u44592  \u50948 \u54644  \u51217 \u49324  \u47116 \u51592 \u46020  \u51116 \u48120 \u51080 \u51012  \u44144 \u50696 \u50836 !</p>\
+                </div>\
+                <li class="checklist-item">\
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 shrink-0" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" /></svg>\
+                    <span><strong>\uc0\u54788 \u44552 :</strong> \u51089 \u51008  \u49885 \u45817 \u51060 \u45208  \u49345 \u51216 \u50640 \u49436 \u45716  \u54788 \u44552 \u47564  \u48155 \u45716  \u44221 \u50864 \u44032  \u51080 \u50612 \u50836 . \u50644 \u54868  \u54872 \u51204  \u54596 \u49688 !</span>\
+                </li>\
+            </ul>\
+        </section>\
+\
+        <section id="itinerary" class="content-box">\
+            <h2 class="section-title">\uc0\u55357 \u56826 \u65039  \u49345 \u49464  \u50668 \u54665  \u51068 \u51221  & \u49704 \u44200 \u51652  \u51060 \u50556 \u44592 </h2>\
+\
+            <div class="day-item mt-4">\
+                <h3 class="day-title" onclick="toggleDay(this)">\
+                    <span>\uc0\u55357 \u56517  1\u51068 \u52264  (8\u50900  10\u51068 , \u51068 \u50836 \u51068 ) \'96 \u50771 \u52852 \u45208 \u51060  \u46020 \u52265  & \u48513 \u51901  \u45149 \u50640 \u49436  \u47582 \u45716  \u51200 \u45377 </span>\
+                    <svg class="arrow w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>\
+                </h3>\
+                <div class="day-content">\
+                    <p><strong>~ 17:00 \uc0\u50771 \u52852 \u45208 \u51060  \u46020 \u52265 :</strong> \u50771 \u52852 \u45208 \u51060  \u44277 \u54637 (WKJ) \u46020 \u52265  \u54980  \u47116 \u53944 \u52852  \u49688 \u47161 . \u48512 \u47784 \u45784  \u51664  \u49891 \u44256  \u54200 \u50504 \u54616 \u44172  \u49689 \u49548 \u47196  \u51060 \u46041 !</p>\
+                    <p><strong>17:30 \uc0\u49689 \u49548  \u52404 \u53356 \u51064 :</strong> \u50771 \u52852 \u45208 \u51060  \u49884 \u45236  \u54840 \u53588  \u52404 \u53356 \u51064  \u54980  \u55092 \u49885 .</p>\
+                    <p class="recommendation-title">\uc0\u55356 \u57320  \u49689 \u49548  \u52628 \u52380 :</p>\
+                    <ul class="list-disc list-inside ml-4">\
+                        <li><strong>Dormy Inn Wakkanai:</strong> \uc0\u52380 \u50672  \u50728 \u52380  \u45824 \u50837 \u51109 , \u44648 \u45143 \u54620  \u44061 \u49892 , \u51339 \u51008  \u51312 \u49885 , \u51452 \u52264  \u54200 \u47532 .</li>\
+                        <li><strong>Surfeel Hotel Wakkanai:</strong> \uc0\u48148 \u45796  \u51204 \u47581 , \u47784 \u45912 \u54616 \u44256  \u44628 \u45140 , \u47924 \u47308  \u51452 \u52264 , \u50669 /\u53552 \u48120 \u45328  \u51064 \u51217 .</li>\
+                        <li><strong>Wakkanai Grand Hotel:</strong> \uc0\u50728 \u52380  \u49884 \u49444 , \u54200 \u51032 \u49884 \u49444  \u51096  \u44054 \u52656 \u51664 , \u47924 \u47308  \u51452 \u52264 .</li>\
+                    </ul>\
+                     <img src="https://www.surfeel-wakkanai.com/ko/img/top/fig-slider05.jpg" alt="\uc0\u50771 \u52852 \u45208 \u51060  \u54840 \u53588  \u50696 \u49884 " class="trip-image">\
+                    <p><strong>18:30 \uc0\u51200 \u45377 \u49885 \u49324 :</strong> \u50771 \u52852 \u45208 \u51060 \u50640 \u49436 \u51032  \u52395  \u51200 \u45377 ! \u49888 \u49440 \u54620  \u54644 \u49328 \u47932 \u51012  \u47579 \u48372 \u49464 \u50836 .</p>\
+                    <p class="recommendation-title">\uc0\u55356 \u57213 \u65039  \u51200 \u45377 \u49885 \u49324  \u52628 \u52380 :</p>\
+                    <ul class="list-disc list-inside ml-4">\
+                        <li><strong>Urokotei (\uc0\u50864 \u47196 \u53076 \u53580 \u51060 ):</strong> \u50976 \u47749  \u54644 \u49328 \u47932  \u51204 \u47928 \u51216  (\u54644 \u49328 \u47932  \u45934 \u48165 , \u44396 \u51060 ). \u44032 \u51313  \u45800 \u50948  \u52628 \u52380 , \u55072 \u52404 \u50612  \u51217 \u44540  \u44032 \u45733 . (\u50696 \u50557  \u46608 \u45716  \u50724 \u54536  \u49884 \u44036  \u47582 \u52656  \u48169 \u47928  \u52628 \u52380 )</li>\
+                        <li><strong>BISTRO U Keito (\uc0\u48708 \u49828 \u53944 \u47196  \u50976  \u52992 \u51060 \u53664 ):</strong> \u52880 \u51452 \u50620  \u45796 \u51060 \u45789  (\u54028 \u49828 \u53440 , \u49828 \u53580 \u51060 \u53356 , \u54788 \u51648  \u50836 \u47532 ). \u50696 \u50557  \u44032 \u45733 .</li>\
+                    </ul>\
+                    <p><strong>20:00 \uc0\u51200 \u45377  \u49328 \u52293  \u46608 \u45716  \u55092 \u49885 :</strong> \u50771 \u52852 \u45208 \u51060  \u49884 \u45236  \u49328 \u52293  \u46608 \u45716  \u54840 \u53588  \u50728 \u52380 \u50640 \u49436  \u54588 \u47196  \u54924 \u48373 .</p>\
+                </div>\
+            </div>\
+\
+            <div class="day-item mt-4">\
+                <h3 class="day-title" onclick="toggleDay(this)">\
+                    <span>\uc0\u55357 \u56517  2\u51068 \u52264  (8\u50900  11\u51068 , \u50900 \u50836 \u51068 ) \'96 \u47112 \u48516 \u49452  \u53456 \u54744 : \u44867 \u44284  \u48148 \u46988 \u51032  \u49452 </span>\
+                    <svg class="arrow w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>\
+                </h3>\
+                <div class="day-content">\
+                    <p><strong>08:00 \uc0\u50500 \u52840  \u49885 \u49324 :</strong> \u54840 \u53588  \u51312 \u49885  \u54980  \u47112 \u48516 \u49452  \u44040  \u51456 \u48708 .</p>\
+                    <p><strong>09:00 \uc0\u50771 \u52852 \u45208 \u51060  \u54168 \u47532  \u53552 \u48120 \u45328  \u51060 \u46041 :</strong> \u47116 \u53944 \u52852  \u51452 \u52264  (\u49457 \u49688 \u44592 \u50640 \u45716  \u51068 \u52237  \u44032 \u45716  \u44163 \u51060  \u51339 \u51020 ).</p>\
+                    <p><strong>10:00 \uc0\u50771 \u52852 \u45208 \u51060 -\u47112 \u48516 \u49452  \u54168 \u47532  \u53457 \u49849 :</strong> \u50557  1\u49884 \u44036  55\u48516  \u49548 \u50836 . (\u47680 \u48120 \u50557  \u54596 \u49688 !)</p>\
+                    <p><strong>12:00 \uc0\u47112 \u48516 \u49452  \u46020 \u52265 :</strong> \u52852 \u54980 \u52852 \u51060 \u54637 (\u39321 \u28145 \u28207 ) \u46020 \u52265 .</p>\
+                    <p class="recommendation-title">\uc0\u55357 \u56983  \u49452  \u45236  \u51060 \u46041 :</p>\
+                    <ul class="list-disc list-inside ml-4">\
+                        <li><strong>\uc0\u47112 \u48516 \u49452  \u45236  \u47116 \u53944 \u52852 :</strong> \u49457 \u49688 \u44592  \u50696 \u50557  \u54596 \u49688 ! \u44032 \u51109  \u54200 \u47532 .</li>\
+                        <li><strong>\uc0\u45824 \u51473 \u44368 \u53685 /\u53469 \u49884 :</strong> \u48260 \u49828  \u48176 \u52264  \u44036 \u44201  \u44600  \u49688  \u51080 \u51020 , \u53469 \u49884 \u45716  \u48708 \u50857  \u48512 \u45812 .</li>\
+                    </ul>\
+                    <p><strong>12:30 \uc0\u51216 \u49900  \u49885 \u49324 :</strong> \u52852 \u54980 \u52852 \u51060 \u54637  \u51452 \u48320 . '\u50864 \u45768 \u46041 (\u49457 \u44172 \u50508  \u45934 \u48165 )'\u51060 \u45208  '\u52852 \u51060 \u49468 \u46041 (\u54644 \u49328 \u47932  \u45934 \u48165 )' \u52628 \u52380 !</p>\
+                     <img src="https://rimage.gnst.jp/livejapan.com/public/article/detail/a/10/00/a1000148/img/ko/a1000148_parts_5bb5809612f17.jpg?20200610194315&q=80&rw=686&rh=490" alt="\uc0\u47112 \u48516 \u49452  \u50864 \u45768 \u46041 " class="trip-image">\
+                    <p><strong>13:30 \uc0\u47112 \u48516 \u49452  \u51452 \u50836  \u47749 \u49548  \u44288 \u44305 :</strong></p>\
+                    <ul class="list-disc list-inside ml-4 space-y-2">\
+                        <li>\
+                            <strong>Momoiwa \uc0\u51204 \u47581 \u45824  (\u26691 \u23721 \u23637 \u26395 \u21488 ):</strong> '\u48373 \u49709 \u50500  \u48148 \u50948 ', \u54392 \u47480  \u48148 \u45796 , \u47532 \u49884 \u47532 \u49328  \u51312 \u47581 . \u51687 \u51008  \u49328 \u52293  \u53076 \u49828 .\
+                            <img src="https://res.cloudinary.com/jnto/image/upload/f_auto,fl_lossy,q_auto/v1/media_national_parks/filer_public/92/fb/92fb911b-06a7-4985-bcd5-0a2c863f46f5/rishiri-rebun-sarobetsu_guided-experience2023_183_3_zbseqd" alt="\uc0\u47112 \u48516 \u49452  \u47784 \u47784 \u51060 \u50752  \u51204 \u47581 \u45824  \u54413 \u44221 " class="trip-image">\
+                            <div class="story-box">\
+                                <p><strong>\uc0\u49828 \u53664 \u47532 :</strong> '\u47784 \u47784 \u51060 \u50752 (\u26691 \u23721 )'\u45716  \u48373 \u49709 \u50500  \u47784 \u50577  \u48148 \u50948 \u50640 \u49436  \u50976 \u47000 . \u50556 \u49373 \u54868  \u54413 \u48512 , \u53944 \u47112 \u53433  \u53076 \u49828  \u49884 \u51089 \u51216 . \u47112 \u48516 \u49452  \u50500 \u47492 \u45796 \u50880 \u51032  \u45824 \u54364 .</p>\
+                            </div>\
+                        </li>\
+                        <li>\
+                            <strong>\uc0\u49828 \u53076 \u53668  \u44278  (\u12473 \u12467 \u12488 \u12531 \u23724 ):</strong> \u47112 \u48516 \u49452  \u52572 \u48513 \u45800 . \u54889 \u47049 \u54616 \u44256  \u50500 \u47492 \u45796 \u50868  \u54644 \u50504  \u51208 \u44221 . \u48148 \u45796 \u49324 \u51088 /\u47932 \u48276  \u44288 \u52272  \u44032 \u45733 \u49457 . (\u48148 \u46988  \u44053 \u54632 )\
+                             <img src="https://www.visit-hokkaido.jp/lsc/upfile/spot/0001/0389/10389_1_l.jpg" alt="\uc0\u47112 \u48516 \u49452  \u49828 \u53076 \u53668 \u44278  \u51208 \u44221 " class="trip-image">\
+                            <div class="story-box">\
+                                <p><strong>\uc0\u49828 \u53664 \u47532 :</strong> '\u49828 \u53076 \u53668 '\u51008  \u50500 \u51060 \u45572 \u50612  'Suko-tan'(\u46405 \u51032  \u45149 \u50640  \u51080 \u45716  \u44278 ) \u50976 \u47000 \u49444 . \u49464 \u49345  \u45149 \u50640  \u50728  \u46319 \u54620  \u44592 \u48516 . \u50696 \u47196 \u48512 \u53552  \u50612 \u50629  \u51473 \u50836  \u44144 \u51216 .</p>\
+                            </div>\
+                        </li>\
+                        <li>\
+                            <strong>\uc0\u47112 \u48516  \u50500 \u50416 \u47784 \u47196 \u52488  \u44400 \u46973 \u51648  (\u12524 \u12502 \u12531 \u12450 \u12484 \u12514 \u12522 \u12477 \u12454 \u32676 \u29983 \u22320 ):</strong> \u44256 \u49328 \u49885 \u47932  \u47112 \u48516  \u50500 \u50416 \u47784 \u47196 \u52488  \u46321  \u50556 \u49373 \u54868  (8\u50900 \u50644  \u45796 \u47480  \u50556 \u49373 \u54868 ).\
+                            <div class="story-box">\
+                                <p><strong>\uc0\u49828 \u53664 \u47532 :</strong> \u47112 \u48516  \u50500 \u50416 \u47784 \u47196 \u52488 \u45716  \u47112 \u48516 \u49452  \u51088 \u49373  \u55148 \u44480  \u45212 \u52488 . \u51060 \u47492 \u51008  \u53440 \u51060 \u46972 \u45432  \u50500 \u50416 \u47784 \u47532  \u47924 \u51109 \u51032  \u51452 \u47672 \u45768 \u50752  \u45806 \u50520 \u45796 \u45716  \u49444 . '\u44867 \u51032  \u49452 ' \u47749 \u49457 \u50640  \u44592 \u50668 .</p>\
+                            </div>\
+                        </li>\
+                        <li>\
+                            <strong>\uc0\u47112 \u48516  \u54840 \u49688  (\u31036 \u25991 \u28246 ):</strong> \u49452  \u45236  \u50976 \u51068 \u54620  \u54840 \u49688 . \u51312 \u50857 \u54616 \u44256  \u54217 \u54868 \u47196 \u50868  \u49328 \u52293 .\
+                             <div class="story-box">\
+                                <p><strong>\uc0\u49828 \u53664 \u47532 :</strong> \u49452  \u51473 \u50521  \u48512 \u44540  \u51089 \u51008  \u54840 \u49688 . \u44256 \u50836 \u54620  \u48516 \u50948 \u44592 . \u49452 \u51032  \u45796 \u50577 \u54620  \u49373 \u53468 \u44228  \u48152 \u50689 .</p>\
+                            </div>\
+                        </li>\
+                    </ul>\
+                    <div class="tip-box">\
+                        <p><strong>\uc0\u54017 :</strong> \u48512 \u47784 \u45784 \u44284  \u54632 \u44760 \u46972 \u47732  \u51687 \u44256  \u50756 \u47564 \u54620  \u53076 \u49828 \u45208  \u51204 \u47581 \u45824  \u50948 \u51452 \u47196 . \u51648 \u51221 \u46108  \u53456 \u48169 \u47196  \u51060 \u50857 , \u49885 \u47932  \u48372 \u54840 !</p>\
+                    </div>\
+                    <p><strong>18:00 \uc0\u49689 \u49548  \u51060 \u46041  \u48143  \u52404 \u53356 \u51064 :</strong> \u47112 \u48516 \u49452 \u50640 \u49436 \u51032  \u54616 \u47355 \u48164 .</p>\
+                    <p class="recommendation-title">\uc0\u55356 \u57320  \u49689 \u49548  \u52628 \u52380 :</p>\
+                    <ul class="list-disc list-inside ml-4">\
+                        <li><strong>\uc0\u47112 \u48516 \u48120 \u49324 \u53412  \u54840 \u53588  (\u31036 \u25991 \u24481 \u23822 \u12507 \u12486 \u12523 ) \u46608 \u45716  \u47112 \u48516 \u44288 \u44305 \u54840 \u53588  (\u31036 \u25991 \u35251 \u20809 \u12507 \u12486 \u12523 ):</strong> \u49884 \u49444  \u50577 \u54840 , \u48148 \u45796  \u51204 \u47581 , \u50728 \u52380  \u44032 \u45733 \u49457 . \u44032 \u51313 \u49892 /\u54868 \u49892  \u54869 \u51064 . (\u49324 \u51204  \u50696 \u50557  \u54596 \u49688 !)</li>\
+                    </ul>\
+                    <p><strong>19:00 \uc0\u51200 \u45377  \u49885 \u49324 :</strong> \u49689 \u49548  \u44032 \u51060 \u49464 \u53412  \u50836 \u47532  \u46608 \u45716  \u52852 \u54980 \u52852 \u51060 \u54637  \u44540 \u52376  \u49885 \u45817 . \u49888 \u49440 \u54620  \u54644 \u49328 \u47932 \u44284  \u51648 \u50669  \u53945 \u49328 \u47932 .</p>\
+                </div>\
+            </div>\
+\
+            <div class="day-item mt-4">\
+                <h3 class="day-title" onclick="toggleDay(this)">\
+                    <span>\uc0\u55357 \u56517  3\u51068 \u52264  (8\u50900  12\u51068 , \u54868 \u50836 \u51068 ) \'96 \u47112 \u48516 \u49452  \u8594  \u50771 \u52852 \u45208 \u51060  \u49884 \u45236  \u44288 \u44305 </span>\
+                    <svg class="arrow w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>\
+                </h3>\
+                <div class="day-content">\
+                    <p><strong>08:00 \uc0\u50500 \u52840  \u49885 \u49324 :</strong> \u49689 \u49548  \u51312 \u49885 .</p>\
+                    <p><strong>09:00 \uc0\u47112 \u48516 \u49452 \u50640 \u49436 \u51032  \u50668 \u50976 :</strong> \u49689 \u49548  \u51452 \u48320  \u49328 \u52293 , \u47803  \u44032 \u48376  \u51687 \u51008  \u53076 \u49828  \u48169 \u47928  (\u52852 \u54980 \u52852 \u51060 \u54637  \u44540 \u52376  \u44277 \u50896 /\u54644 \u48320  \u46321 ).</p>\
+                    <p><strong>10:30 \uc0\u54168 \u47532  \u53552 \u48120 \u45328  \u51060 \u46041 :</strong> \u47112 \u48516 \u49452  \u47116 \u53944 \u52852  \u48152 \u45225 .</p>\
+                    <p><strong>11:30 \uc0\u47112 \u48516 \u49452 -\u50771 \u52852 \u45208 \u51060  \u54168 \u47532  \u53457 \u49849 :</strong> \u50557  1\u49884 \u44036  55\u48516  \u49548 \u50836 .</p>\
+                    <p><strong>13:30 \uc0\u50771 \u52852 \u45208 \u51060  \u46020 \u52265  & \u51216 \u49900  \u49885 \u49324 :</strong> \u47116 \u53944 \u52852  \u45796 \u49884  \u51060 \u50857 , \u49884 \u45236  \u51060 \u46041 .</p>\
+                    <p class="recommendation-title">\uc0\u55356 \u57213 \u65039  \u51216 \u49900  \u52628 \u52380 :</p>\
+                    <ul class="list-disc list-inside ml-4">\
+                        <li><strong>Hanaichimonme (\uc0\u54616 \u45208 \u51060 \u52824 \u47788 \u47700 ):</strong> \u54924 \u51204 \u52488 \u48165 , \u44032 \u51313  \u51064 \u44592 .</li>\
+                        <li><strong>Take-chan (\uc0\u53440 \u52992 \u52268 ):</strong> \u49380 \u48652 \u49380 \u48652 , \u49828 \u49884 , \u53888 \u44608  \u46321  \u45796 \u50577 \u54620  \u51068 \u49885 .</li>\
+                        <li><strong>La Seine Restaurant (\uc0\u46972  \u49468 \u45712  \u47112 \u49828 \u53664 \u46993 ):</strong> \u48516 \u50948 \u44592  \u51339 \u51008  \u52852 \u54168  \u44216  \u47112 \u49828 \u53664 \u46993  (\u50577 \u49885 ).</li>\
+                    </ul>\
+                    <p><strong>14:30 \uc0\u50771 \u52852 \u45208 \u51060  \u49884 \u45236  \u44288 \u44305 :</strong></p>\
+                    <ul class="list-disc list-inside ml-4 space-y-2">\
+                        <li>\
+                            <strong>Wakkanai Park (\uc0\u50771 \u52852 \u45208 \u51060  \u44277 \u50896 ):</strong> \u47691 \u51652  \u51204 \u47581  (\u49884 \u45236 , \u48148 \u45796 , \u47532 \u49884 \u47532 \u49452 ). \u44592 \u45392 \u48708 , \u49328 \u52293 \u47196 .\
+                            <div class="story-box">\
+                                <p><strong>\uc0\u49828 \u53664 \u47532 :</strong> \u50771 \u52852 \u45208 \u51060  \u50669 \u49324 \u50752  \u49345 \u51669 \u51201  \u51032 \u48120 . \u44284 \u44144  \u49324 \u54624 \u47536 (\u52852 \u46972 \u54980 \u53664 ) \u44288 \u44228 , \u48513 \u48169  \u44060 \u52377  \u50669 \u49324 , \u48708 \u44537  \u44592 \u47532 \u45716  \u44277 \u44036 . \u44540 \u54788 \u45824 \u49324  \u45800 \u47732 .</p>\
+                            </div>\
+                        </li>\
+                        <li>\
+                            <strong>Wakkanai North Breakwater Dome (\uc0\u50771 \u52852 \u45208 \u51060  \u48513 \u48169 \u54028 \u51228  \u46036 ):</strong> \u46021 \u53945 \u54620  \u50500 \u52824 \u54805  \u48169 \u54028 \u51228 . \u44256 \u45824  \u47196 \u47560  \u44148 \u52629  \u50577 \u49885 . \u49324 \u51652  \u47749 \u49548 .\
+                            <div class="story-box">\
+                                <p><strong>\uc0\u49828 \u53664 \u47532 :</strong> 1931-1936\u45380  \u44148 \u49444 . \u49324 \u54624 \u47536  \u50672 \u46973 \u49440  \u54637 \u44396  \u48372 \u54840  \u47785 \u51201 . \u53664 \u47785  \u44592 \u49696  \u44152 \u51089 , \u54788 \u51116  \u47004 \u46300 \u47560 \u53356  \u48143  \u55092 \u49885  \u44277 \u44036 .</p>\
+                            </div>\
+                        </li>\
+                        <li>\
+                            <strong>Cape Noshappu (\uc0\u45432 \u49343 \u54392  \u44278 ):</strong> \u50500 \u47492 \u45796 \u50868  \u51068 \u47792  \u47749 \u49548 . \u46028 \u44256 \u47000  \u46041 \u49345 , \u48148 \u45796  \u51204 \u47581 . \u54644 \u50577  \u44284 \u54617 \u44288 , \u45432 \u49343 \u54392  \u46321 \u45824  \u44540 \u52376 . (\u51068 \u47792  \u49884 \u44036  \u48169 \u47928  \u52628 \u52380 !)\
+                             <img src="https://www.atraveltalk.com/data/editor/2106/20210629045517_205a7207e2c13bec1cf0c6fa992df44b_ndid.png" alt="\uc0\u45432 \u49343 \u54392 \u44278  \u51068 \u47792 " class="trip-image">\
+                            <div class="story-box">\
+                                <p><strong>\uc0\u49828 \u53664 \u47532 :</strong> '\u45432 \u49343 \u54392 '\u45716  \u50500 \u51060 \u45572 \u50612  'Nos-cap'(\u44278 \u51032  \u47672 \u47532 ) \u50976 \u47000 . \u46041 \u54644  \u51068 \u47792  \u52572 \u51201  \u51109 \u49548 . \u46028 \u44256 \u47000  \u52636 \u54788  \u51110 \u50500  \u46041 \u49345  \u49464 \u50892 \u51664 .</p>\
+                            </div>\
+                        </li>\
+                        <li>\
+                            <strong>Wakkanai Centennial Memorial Tower (\uc0\u50771 \u52852 \u45208 \u51060  \u48177 \u45380  \u44592 \u45392 \u53457 ):</strong> \u50771 \u52852 \u45208 \u51060  \u44277 \u50896  \u45236 . 360\u46020  \u51312 \u47581  \u51204 \u47581 \u45824 . \u50669 \u49324 /\u47928 \u54868  \u51088 \u47308 \u44288 .\
+                            <div class="story-box">\
+                                <p><strong>\uc0\u49828 \u53664 \u47532 :</strong> \u50771 \u52852 \u45208 \u51060  \u44060 \u54637  100\u51452 \u45380  \u44592 \u45392  (1978\u45380 ). \u49324 \u54624 \u47536 , \u47532 \u49884 \u47532 \u49452 , \u47112 \u48516 \u49452  \u51312 \u47581 . \u44060 \u52377 \u49324 , \u50500 \u51060 \u45572  \u47928 \u54868  \u46321  \u51221 \u48372  \u51228 \u44277 .</p>\
+                            </div>\
+                        </li>\
+                    </ul>\
+                    <p><strong>18:30 \uc0\u51200 \u45377  \u49885 \u49324 :</strong> \u50771 \u52852 \u45208 \u51060 \u50640 \u49436 \u51032  \u47560 \u51648 \u47561  \u51200 \u45377 .</p>\
+                    <p><strong>20:00 \uc0\u49689 \u49548  \u48373 \u44480  \u48143  \u55092 \u49885 :</strong> \u54840 \u53588  \u55092 \u49885 , \u50728 \u52380  \u51600 \u44592 \u44592 .</p>\
+                </div>\
+            </div>\
+\
+            <div class="day-item mt-4">\
+                <h3 class="day-title" onclick="toggleDay(this)">\
+                    <span>\uc0\u55357 \u56517  4\u51068 \u52264  (8\u50900  13\u51068 , \u49688 \u50836 \u51068 ) \'96 \u50771 \u52852 \u45208 \u51060 \u50640 \u49436 \u51032  \u47560 \u51648 \u47561  \u50500 \u52840  & \u52636 \u48156 </span>\
+                    <svg class="arrow w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path></svg>\
+                </h3>\
+                <div class="day-content">\
+                    <p><strong>08:00 \uc0\u50500 \u52840  \u49885 \u49324 :</strong> \u54840 \u53588  \u51312 \u49885  \u54980  \u52404 \u53356 \u50500 \u50883  \u51456 \u48708 .</p>\
+                    <p><strong>09:30 \uc0\u52404 \u53356 \u50500 \u50883 :</strong> \u54840 \u53588  \u52404 \u53356 \u50500 \u50883 .</p>\
+                    <p><strong>10:00 \uc0\u52636 \u48156  \u51204  \u50668 \u50976  \u49884 \u44036 :</strong></p>\
+                    <ul class="list-disc list-inside ml-4">\
+                        <li><strong>\uc0\u49884 \u45236  \u44592 \u45392 \u54408  \u49660 \u54609 :</strong> \u50771 \u52852 \u45208 \u51060 \u50669  \u51452 \u48320 , \u49884 \u45236  \u49345 \u51216  (\u54644 \u49328 \u47932  \u44032 \u44277 \u54408 , \u44284 \u51088  \u46321 ).</li>\
+                        <li><strong>\uc0\u50771 \u52852 \u45208 \u51060  \u48512 \u46160  \u49884 \u51109  (\u31258 \u20869 \u21103 \u28207 \u24066 \u22580 ):</strong> \u54644 \u49328 \u47932 , \u45453 \u49328 \u47932  \u54032 \u47588 , \u49885 \u45817 \u44032 . (\u49884 \u44036  \u52649 \u48516  \u49884  \u48169 \u47928 )\
+                            <div class="story-box">\
+                                <p><strong>\uc0\u49828 \u53664 \u47532 :</strong> \u54637 \u44396  \u46020 \u49884  \u50771 \u52852 \u45208 \u51060 \u51032  \u54876 \u47141 . \u49888 \u49440 \u54620  \u54644 \u49328 \u47932 , \u51648 \u50669  \u45453 \u49328 \u47932 . \u54788 \u51648  \u51452 \u48124  \u49334 \u44284  \u48128 \u51217 . \u44284 \u44144  \u54637 \u44396 \u45716  \u46020 \u49884 \u51032  \u49373 \u47749 \u51460 .</p>\
+                            </div>\
+                        </li>\
+                    </ul>\
+                    <p><strong>\uc0\u50771 \u52852 \u45208 \u51060  \u44277 \u54637  \u51060 \u46041 :</strong> \u52636 \u48156  \u52572 \u49548  1\u49884 \u44036  30\u48516  \u51204  \u46020 \u52265 .</p>\
+                    <p><strong>11:30 \uc0\u47116 \u53944 \u52852  \u48152 \u45225 :</strong> \u50771 \u52852 \u45208 \u51060  \u44277 \u54637  \u47116 \u53944 \u52852  \u48152 \u45225 .</p>\
+                    <p><strong>12:30 \uc0\u50771 \u52852 \u45208 \u51060  \u44277 \u54637  \u52636 \u48156 :</strong> \u50668 \u54665  \u47560 \u47924 \u47532 .</p>\
+                </div>\
+            </div>\
+        </section>\
+\
+        <section id="tips" class="content-box">\
+            <h2 class="section-title">\uc0\u55357 \u56481  \u52628 \u44032  \u50668 \u54665  \u54017  & \u51221 \u48372  (\u49828 \u53664 \u47532 \u53588 \u47553  \u50640 \u46356 \u49496 !)</h2>\
+            <ul class="list-disc list-inside space-y-3 mt-4">\
+                <li><strong>\uc0\u45712 \u44555 \u54620  \u50668 \u54665 :</strong> \u51068 \u51221  \u49324 \u51060 \u50640  \u52649 \u48516 \u54620  \u51060 \u46041 /\u55092 \u49885  \u49884 \u44036  \u54252 \u54632 . \u48512 \u47784 \u45784  \u52968 \u46356 \u49496 \u50640  \u47582 \u52656  \u50976 \u46041 \u51201  \u51312 \u51208 .\
+                    <div class="tip-box"><p><strong>\uc0\u54017 :</strong> \u50668 \u54665 \u51008  \u49549 \u46020 \u44032  \u50500 \u45768 \u46972  \u44618 \u51060 ! \u50668 \u50976 \u47196 \u50868  \u49884 \u44036  \u51088 \u52404 \u44032  \u49548 \u51473 \u54620  \u52628 \u50613 \u51060  \u46121 \u45768 \u45796 .</p></div>\
+                </li>\
+                <li><strong>\uc0\u49324 \u51652  \u49828 \u54047 :</strong> \u50771 \u52852 \u45208 \u51060  \u44277 \u50896  \u51204 \u47581 \u45824 , \u48513 \u48169 \u54028 \u51228  \u46036 , \u45432 \u49343 \u54392  \u44278  \u51068 \u47792 , \u47112 \u48516 \u49452  \u47784 \u47784 \u51060 \u50752  \u51204 \u47581 \u45824 , \u49828 \u53076 \u53668  \u44278 , \u50556 \u49373 \u54868  \u44400 \u46973 \u51648  \u46321 .\
+                    <div class="tip-box"><p><strong>\uc0\u54017 :</strong> \u44033  \u51109 \u49548 \u51032  \u49828 \u53664 \u47532 \u47484  \u49373 \u44033 \u54616 \u47728  \u49324 \u51652 \u51012  \u52237 \u51004 \u47732  \u51032 \u48120 \u44032  \u44618 \u50612 \u51656  \u44144 \u50696 \u50836 .</p></div>\
+                </li>\
+                <li><strong>\uc0\u51648 \u50669  \u47928 \u54868 /\u50669 \u49324 :</strong> \u50771 \u52852 \u45208 \u51060  \u48177 \u45380  \u44592 \u45392 \u53457  \u51088 \u47308 \u44288 , \u44277 \u50896  \u44592 \u45392 \u48708  \u53685 \u54644  \u50669 \u49324  \u50687 \u48372 \u44592 .\
+                    <div class="tip-box"><p><strong>\uc0\u54017 :</strong> \u50771 \u52852 \u45208 \u51060 \u45716  \u52572 \u48513 \u45800  \u51648 \u47532 \u51201  \u53945 \u49457 \u49345  \u47084 \u49884 \u50500 \u50752 \u51032  \u44288 \u44228 , \u50500 \u51060 \u45572  \u47928 \u54868  \u46321  \u46021 \u53945 \u54620  \u50669 \u49324 \u51201  \u48176 \u44221 \u51060  \u51080 \u50612 \u50836 .</p></div>\
+                </li>\
+                <li><strong>\uc0\u51088 \u50672  & \u44284 \u54617 :</strong> \u47112 \u48516 \u49452  \u44256 \u49328  \u49885 \u47932 , \u54644 \u50577  \u49373 \u47932  \u44288 \u52272 . \u45432 \u49343 \u54392  \u44278  \u54644 \u50577  \u44284 \u54617 \u44288  \u48169 \u47928  \u44256 \u47140 .\
+                    <div class="tip-box"><p><strong>\uc0\u54017 :</strong> \u47112 \u48516 \u49452  \u44256 \u49328  \u49885 \u47932 \u46308 \u51032  \u49373 \u51316  \u51204 \u47029 \u51012  \u44288 \u52272 \u54616 \u45716  \u44163 \u46020  \u55141 \u48120 \u47196 \u50868  \u44221 \u54744 \u51060  \u46112  \u44144 \u50696 \u50836 .</p></div>\
+                </li>\
+                <li><strong>\uc0\u49885 \u49324 :</strong> \u54859 \u52852 \u51060 \u46020  \u48513 \u48512  \u54644 \u49328 \u47932  (\u53945 \u55176  \u50668 \u47492  \u50864 \u45768 ) \u52628 \u52380 . \u51669 \u44592 \u49828 \u52856 , \u54859 \u52852 \u51060 \u46020  \u46972 \u47704 \u46020  \u49884 \u46020 .\
+                    <div class="tip-box"><p><strong>\uc0\u54017 :</strong> \u49888 \u49440 \u54620  \u54644 \u49328 \u47932 \u51008  \u50612 \u48512 \u46308 \u51032  \u46400 \u44284  \u45432 \u47141 \u51060  \u45812 \u44596  \u44208 \u44284 \u47932 \u51077 \u45768 \u45796 .</p></div>\
+                </li>\
+                <li><strong>\uc0\u54168 \u47532  \u51060 \u46041 :</strong> \u54200 \u50504 \u54620  \u51340 \u49437 (\u44536 \u47536 \u49437 , \u52840 \u45824 \u52856 ) \u44256 \u47140 . \u54168 \u47532  \u45236  \u44036 \u49885  \u54032 \u47588 .</li>\
+                <li><strong>\uc0\u47116 \u53944 \u52852 :</strong> \u51340 \u52769  \u53685 \u54665  \u51452 \u51032 . \u45348 \u48708 \u44172 \u51060 \u49496  \u54596 \u49688 . \u51452 \u50976  \u48169 \u48277  \u48120 \u47532  \u54869 \u51064 .</li>\
+                <li><strong>\uc0\u47532 \u49884 \u47532 \u49452 :</strong> \u49884 \u44036  \u45908  \u51080 \u45796 \u47732  \u47112 \u48516 \u49452  \u44540 \u52376  \u47532 \u49884 \u47532 \u49452  \u48169 \u47928  \u44256 \u47140  (\u47532 \u49884 \u47532 \u49328 ).\
+                    <div class="tip-box"><p><strong>\uc0\u54017 :</strong> \u47532 \u49884 \u47532 \u49328 \u51008  '\u47532 \u49884 \u47532  \u54980 \u51648 '\u47196  \u48520 \u47540  \u47564 \u53372  \u50500 \u47492 \u45796 \u50892 \u50836 . \u47112 \u48516 \u49452 \u50640 \u49436  \u48148 \u46972 \u48372 \u45716  \u47784 \u49845 \u46020  \u44536 \u47548  \u44057 \u49845 \u45768 \u45796 .</p></div>\
+                </li>\
+            </ul>\
+        </section>\
+\
+        <section id="food" class="content-box">\
+            <h2 class="section-title">\uc0\u55356 \u57180  \u52628 \u52380  \u47673 \u44144 \u47532  (\u49828 \u53664 \u47532 \u53588 \u47553  \u50640 \u46356 \u49496 !)</h2>\
+            <ul class="list-disc list-inside space-y-3 mt-4">\
+                <li><strong>\uc0\u50864 \u45768 \u46041  (\u49457 \u44172 \u50508  \u45934 \u48165 ):</strong> \u47112 \u48516 \u49452  \u45824 \u54364  \u47700 \u45684 ! \u49888 \u49440 \u54616 \u44256  \u45804 \u53092 \u54620  \u49457 \u44172 \u50508 .\
+                    <div class="tip-box"><p><strong>\uc0\u54017 :</strong> \u47112 \u48516 \u49452  \u51452 \u48320  \u54644 \u50669 \u51008  \u49457 \u44172 \u44032  \u49332 \u44592  \u51339 \u51008  \u54872 \u44221 . \u50668 \u47492  \u51228 \u52384  \u49457 \u44172 \u45716  \u47579 \u51060  \u46832 \u50612 \u45225 \u45768 \u45796 .</p></div>\
+                     <img src="https://mblogthumb-phinf.pstatic.net/MjAxNzEwMDhfMjc3/MDAxNTA3NDM5MzcxNzQz.uLhAaOaUoOfmeuKyMpx2YdKI0cgCnbULibi8eOkMYEsg.jV7vxqAPy5aNgyyZz2jFjuteSO0ZI2EsV3eifUK-2i8g.JPEG.ines011/%EC%B8%A0%ED%82%A4%EC%A7%80%EC%8B%9C%EC%9E%A5%EC%9A%B0%EB%8B%88%EB%8F%9917.JPG?type=w800" alt="\uc0\u47579 \u51080 \u45716  \u50864 \u45768 \u46041 " class="trip-image">\
+                </li>\
+                <li><strong>\uc0\u52852 \u51060 \u49468 \u46041  (\u54644 \u49328 \u47932  \u45934 \u48165 ):</strong> \u50672 \u50612 , \u52280 \u52824 , \u49352 \u50864  \u46321  \u45796 \u50577 \u54620  \u54644 \u49328 \u47932 .</li>\
+                <li><strong>\uc0\u51669 \u44592 \u49828 \u52856 :</strong> \u54859 \u52852 \u51060 \u46020  \u47749 \u47932  \u50577 \u44256 \u44592  \u44396 \u51060 .\
+                    <div class="tip-box"><p><strong>\uc0\u54017 :</strong> \u54859 \u52852 \u51060 \u46020  \u51669 \u44592 \u49828 \u52856 \u51008  \u44060 \u52377  \u49884 \u45824 \u48512 \u53552  \u45236 \u47140 \u50728  \u54693 \u53664  \u51020 \u49885 \u51077 \u45768 \u45796 .</p></div>\
+                </li>\
+                <li><strong>\uc0\u46972 \u47704 :</strong> \u54859 \u52852 \u51060 \u46020  \u45824 \u54364  \u51020 \u49885 ! \u50771 \u52852 \u45208 \u51060  \u46972 \u47704  \u53945 \u51669  \u52286 \u50500 \u48372 \u44592 .</li>\
+                <li><strong>\uc0\u49888 \u49440 \u54620  \u54644 \u49328 \u47932  \u44396 \u51060 /\u54924 :</strong> \u54637 \u44396  \u44540 \u52376  \u49885 \u45817 \u50640 \u49436  \u45817 \u51068  \u51105 \u51008  \u54644 \u49328 \u47932 .</li>\
+            </ul>\
+        </section>\
+\
+        <section id="extra-spots" class="content-box">\
+            <h2 class="section-title">\uc0\u55357 \u56525  \u52628 \u44032  \u48169 \u47928  \u44256 \u47140  \u51109 \u49548  (\u49884 \u44036  \u50668 \u50976  \u49884 )</h2>\
+            <ul class="list-disc list-inside space-y-3 mt-4">\
+                <li>\
+                    <strong>\uc0\u50771 \u52852 \u45208 \u51060  \u53076 \u50864 \u44032 \u53216 \u51064  (\u31258 \u20869 \u20844 \u22290 ) \u45236  \u45796 \u47480  \u44592 \u45392 \u48708 :</strong> \u50500 \u50556 \u52852  \u53664 \u50864 (\u27194 \u22826 \u23798 \u27665 \u24944 \u38666 \u30865 ), 9\u51064 \u51032  \u52376 \u45376 \u48708 (\u20061 \u20154 \u12398 \u20057 \u22899 \u12398 \u30865 ) \u46321 .\
+                    <div class="story-box">\
+                        <p><strong>\uc0\u49828 \u53664 \u47532 :</strong> \u50500 \u50556 \u52852  \u53664 \u50864 \u45716  \u49324 \u54624 \u47536 \u50640 \u49436  \u46028 \u50500 \u50724 \u51648  \u47803 \u54616 \u44144 \u45208  \u49324 \u47581 \u54620  \u51060 \u46308 \u51012  \u44592 \u47532 \u45716  \u50948 \u47161 \u48708 . 9\u51064 \u51032  \u52376 \u45376 \u48708 \u45716  \u51204 \u51137  \u47561 \u48148 \u51648  \u49324 \u54624 \u47536  \u51204 \u54868 \u44397  \u50668 \u49457  \u44368 \u54872 \u50896 \u46308 \u51032  \u48708 \u44537 \u51201 \u51064  \u51060 \u50556 \u44592 . \u50771 \u52852 \u45208 \u51060 \u51032  \u50669 \u49324 \u51201  \u50500 \u54548 \u44284  \u48513 \u48169  \u44288 \u44228 \u47484  \u48372 \u50668 \u51469 \u45768 \u45796 .</p>\
+                    </div>\
+                </li>\
+                <li><strong>\uc0\u50771 \u52852 \u45208 \u51060  \u48512 \u46160  \u49884 \u51109  (\u31258 \u20869 \u21103 \u28207 \u24066 \u22580 ):</strong> \u54788 \u51648  \u48516 \u50948 \u44592  \u52404 \u54744 .</li>\
+                <li>\
+                    <strong>\uc0\u45432 \u49343 \u54392  \u44278  \u54644 \u50577  \u44284 \u54617 \u44288  (\u12494 \u12471 \u12515 \u12483 \u12503 \u23506 \u27969 \u27700 \u26063 \u39208 ):</strong> \u48513 \u48169  \u54644 \u50577  \u49373 \u47932  \u44288 \u52272 .\
+                    <div class="tip-box"><p><strong>\uc0\u54017 :</strong> \u48513 \u51901  \u48148 \u45796 \u51032  \u46021 \u53945 \u54620  \u49373 \u47932 \u46308 \u51012  \u44288 \u52272 \u54616 \u47728  \u54644 \u50577  \u49373 \u53468 \u44228 \u47484  \u48176 \u50892 \u48380  \u49688  \u51080 \u50612 \u50836 .</p></div>\
+                </li>\
+            </ul>\
+        </section>\
+    </main>\
+\
+    <footer class="text-center p-6 bg-gray-100 mt-8 rounded-t-lg">\
+        <p class="text-sm text-gray-600">\uc0\u48512 \u47784 \u45784 \u44284  \u54632 \u44760 \u54616 \u45716  \u50771 \u52852 \u45208 \u51060 -\u47112 \u48516 \u49452  \u50668 \u54665 , \u51600 \u44144 \u50868  \u52628 \u50613  \u44032 \u46301  \u47564 \u46300 \u49884 \u44600  \u48148 \u46989 \u45768 \u45796 ! \u10084 \u65039 </p>\
+    </footer>\
+\
+    <button id="backToTopBtn" onclick="scrollToTop()">\
+        <span>&#8679;</span> </button>\
+\
+    <script>\
+        // Function to toggle day details\
+        function toggleDay(element) \{\
+            const content = element.nextElementSibling;\
+            const arrow = element.querySelector('.arrow');\
+            if (content.style.display === "block") \{\
+                content.style.display = "none";\
+                arrow.classList.remove('arrow-down');\
+            \} else \{\
+                content.style.display = "block";\
+                arrow.classList.add('arrow-down');\
+            \}\
+        \}\
+\
+        // Back to Top Button Logic\
+        const backToTopButton = document.getElementById('backToTopBtn');\
+\
+        window.onscroll = function() \{\
+            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) \{\
+                backToTopButton.style.display = "flex";\
+            \} else \{\
+                backToTopButton.style.display = "none";\
+            \}\
+        \};\
+\
+        function scrollToTop() \{\
+            window.scrollTo(\{top: 0, behavior: 'smooth'\});\
+        \}\
+    </script>\
+\
+</body>\
+</html>\
+}
